@@ -1,15 +1,15 @@
 const mongoose=require('mongoose') 
 
 const courseSchema=mongoose.Schema({
-    Courseid: Number,
+    CourseId: Number,
     CourseName: String,
     CourseCategory: String,
     CourseDescription: String,
     CourseImage: String,
     CourseDuration: Number,
-    fee:Number
+    CourseFee:Number
 
 })
 
 const courseData=mongoose.model('course',courseSchema)
-module.export=courseData;
+module.exports=courseData;
